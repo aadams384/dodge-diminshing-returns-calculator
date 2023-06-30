@@ -75,7 +75,7 @@ export default function Home() {
                 <p>%</p>
               </div>
               <Image
-              className='p-2'
+                className="p-2"
                 src="/images/bonusdodge.png"
                 width={500}
                 height={500}
@@ -95,7 +95,7 @@ export default function Home() {
                 <p>%</p>
               </div>
               <Image
-              className='p-2'
+                className="p-2"
                 src="/images/totaldodge.png"
                 width={500}
                 height={500}
@@ -103,21 +103,21 @@ export default function Home() {
               />
             </div>
           </div>
-          <div>
-          </div>
+          <div></div>
 
           {playerClass && undiminishedAmount ? (
             <h2 className="text-center text-2xl font-bold md:col-span-6">
               your diminished bonus dodge is: {diminishedAmount}% <br />
               your dodge is diminished at a rate of{" "}
-              {((diminishedAmount / undiminishedAmount) * 100).toFixed(2)}% <br />
-              your effective dodge rate is {totalAmount - (undiminishedAmount - diminishedAmount)}%
+              {((diminishedAmount / undiminishedAmount) * 100).toFixed(2)}%{" "}
+              <br />
+              your effective dodge rate is{" "}
+              {totalAmount - (undiminishedAmount - diminishedAmount)}%
             </h2>
           ) : (
             ""
           )}
         </div>
-        <div></div>
       </form>
     </RootLayout>
   );
