@@ -122,7 +122,7 @@ export default function Home() {
               {totalAmount - (undiminishedAmount - diminishedAmount)}%
             </h2>
           ) : (
-            ""
+            {}
           )}
         </div>
       </form>
