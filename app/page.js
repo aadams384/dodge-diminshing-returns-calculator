@@ -38,7 +38,14 @@ export default function Home() {
 
     const result = cInverse + k / undiminishedAmount;
     setDiminishedAmount((1 / result).toFixed(2));
-  }, [playerClass, undiminishedAmount]);
+  }, [
+    playerClass,
+    undiminishedAmount,
+    coefficients.druid.cInverse,
+    coefficients.druid.k,
+    coefficients.warPalDK.cInverse,
+    coefficients.warPalDK.k,
+  ]);
 
   return (
     <RootLayout>
