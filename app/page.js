@@ -112,7 +112,7 @@ export default function Home() {
           </div>
           <div></div>
 
-          {playerClass && undiminishedAmount ? (
+          {playerClass && undiminishedAmount && totalAmount ? (
             <h2 className="text-center text-2xl font-bold md:col-span-6">
               your diminished bonus dodge is: {diminishedAmount}% <br />
               your dodge is diminished at a rate of{" "}
@@ -122,7 +122,7 @@ export default function Home() {
               {totalAmount - (undiminishedAmount - diminishedAmount)}%
             </h2>
           ) : (
-            {}
+            ""
           )}
         </div>
       </form>
